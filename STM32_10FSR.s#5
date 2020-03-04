@@ -10827,9 +10827,25 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 </net>
 <net name="VCC_5V" class="0">
 <segment>
+<pinref part="U$1" gate="G$1" pin="VBAT"/>
+<pinref part="J2" gate="G$1" pin="1"/>
+<wire x1="236.22" y1="7.62" x2="256.54" y2="7.62" width="0.1524" layer="91"/>
+<label x="241.3" y="7.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="185.42" y1="180.34" x2="193.04" y2="180.34" width="0.1524" layer="91"/>
+<label x="187.96" y="180.34" size="1.778" layer="95"/>
+<pinref part="X5" gate="-1" pin="S"/>
+</segment>
+<segment>
 <pinref part="SV2" gate="G$1" pin="2"/>
 <wire x1="152.4" y1="165.1" x2="165.1" y2="165.1" width="0.1524" layer="91"/>
 <label x="154.94" y="165.1" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="205.74" y1="180.34" x2="215.9" y2="180.34" width="0.1524" layer="91"/>
+<label x="208.28" y="180.34" size="1.778" layer="95"/>
+<pinref part="X5" gate="-2" pin="S"/>
 </segment>
 <segment>
 <pinref part="X4" gate="-1" pin="S"/>
@@ -10862,24 +10878,12 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <wire x1="152.4" y1="172.72" x2="165.1" y2="172.72" width="0.1524" layer="91"/>
 <label x="154.94" y="172.72" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="6"/>
-<pinref part="U$1" gate="G$1" pin="PA9"/>
-<wire x1="177.8" y1="43.18" x2="195.58" y2="43.18" width="0.1524" layer="91"/>
-<label x="182.88" y="43.18" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="TXRX" class="0">
 <segment>
 <pinref part="SV2" gate="G$1" pin="4"/>
 <wire x1="152.4" y1="170.18" x2="165.1" y2="170.18" width="0.1524" layer="91"/>
 <label x="154.94" y="170.18" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="7"/>
-<pinref part="U$1" gate="G$1" pin="PA10"/>
-<wire x1="177.8" y1="40.64" x2="195.58" y2="40.64" width="0.1524" layer="91"/>
-<label x="182.88" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="EN" class="0">
@@ -10894,12 +10898,6 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <pinref part="U2" gate="A" pin="A"/>
 <wire x1="243.84" y1="167.64" x2="238.76" y2="167.64" width="0.1524" layer="91"/>
 <label x="241.3" y="167.64" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="1"/>
-<pinref part="U$1" gate="G$1" pin="PB12"/>
-<wire x1="177.8" y1="55.88" x2="195.58" y2="55.88" width="0.1524" layer="91"/>
-<label x="182.88" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="IP2" class="0">
@@ -10932,24 +10930,12 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <wire x1="243.84" y1="165.1" x2="238.76" y2="165.1" width="0.1524" layer="91"/>
 <label x="241.3" y="165.1" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="2"/>
-<pinref part="U$1" gate="G$1" pin="PB13"/>
-<wire x1="177.8" y1="53.34" x2="195.58" y2="53.34" width="0.1524" layer="91"/>
-<label x="182.88" y="53.34" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="C" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="C"/>
 <wire x1="243.84" y1="162.56" x2="238.76" y2="162.56" width="0.1524" layer="91"/>
 <label x="241.3" y="162.56" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="3"/>
-<pinref part="U$1" gate="G$1" pin="PB14"/>
-<wire x1="177.8" y1="50.8" x2="195.58" y2="50.8" width="0.1524" layer="91"/>
-<label x="182.88" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="IP8" class="0">
@@ -11037,11 +11023,26 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <junction x="345.44" y="160.02"/>
 <label x="350.52" y="160.02" size="1.778" layer="95"/>
 </segment>
+</net>
+<net name="N$1" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA0"/>
-<pinref part="J2" gate="G$1" pin="5"/>
-<wire x1="236.22" y1="17.78" x2="256.54" y2="17.78" width="0.1524" layer="91"/>
-<label x="241.3" y="17.78" size="1.778" layer="95"/>
+<pinref part="J1" gate="G$1" pin="1"/>
+<pinref part="U$1" gate="G$1" pin="PB12"/>
+<wire x1="177.8" y1="55.88" x2="195.58" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="2"/>
+<pinref part="U$1" gate="G$1" pin="PB13"/>
+<wire x1="177.8" y1="53.34" x2="195.58" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="3"/>
+<pinref part="U$1" gate="G$1" pin="PB14"/>
+<wire x1="177.8" y1="50.8" x2="195.58" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -11056,6 +11057,20 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <pinref part="J1" gate="G$1" pin="5"/>
 <pinref part="U$1" gate="G$1" pin="PA8"/>
 <wire x1="177.8" y1="45.72" x2="195.58" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="6"/>
+<pinref part="U$1" gate="G$1" pin="PA9"/>
+<wire x1="177.8" y1="43.18" x2="195.58" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="7"/>
+<pinref part="U$1" gate="G$1" pin="PA10"/>
+<wire x1="177.8" y1="40.64" x2="195.58" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -11107,6 +11122,20 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <wire x1="177.8" y1="22.86" x2="195.58" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="15"/>
+<pinref part="U$1" gate="G$1" pin="PB7"/>
+<wire x1="177.8" y1="20.32" x2="195.58" y2="20.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="16"/>
+<pinref part="U$1" gate="G$1" pin="PB8"/>
+<wire x1="177.8" y1="17.78" x2="195.58" y2="17.78" width="0.1524" layer="91"/>
+</segment>
+</net>
 <net name="N$17" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="17"/>
@@ -11154,6 +11183,13 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <pinref part="U$1" gate="G$1" pin="PC15"/>
 <pinref part="J2" gate="G$1" pin="4"/>
 <wire x1="236.22" y1="15.24" x2="256.54" y2="15.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PA0"/>
+<pinref part="J2" gate="G$1" pin="5"/>
+<wire x1="236.22" y1="17.78" x2="256.54" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$26" class="0">
@@ -11270,12 +11306,6 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <wire x1="193.04" y1="144.78" x2="185.42" y2="144.78" width="0.1524" layer="91"/>
 <label x="185.42" y="144.78" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="16"/>
-<pinref part="U$1" gate="G$1" pin="PB8"/>
-<wire x1="177.8" y1="17.78" x2="195.58" y2="17.78" width="0.1524" layer="91"/>
-<label x="182.88" y="17.78" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="AD0" class="0">
 <segment>
@@ -11289,12 +11319,6 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <pinref part="X4" gate="-4" pin="S"/>
 <wire x1="215.9" y1="144.78" x2="205.74" y2="144.78" width="0.1524" layer="91"/>
 <label x="208.28" y="144.78" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="15"/>
-<pinref part="U$1" gate="G$1" pin="PB7"/>
-<wire x1="177.8" y1="20.32" x2="195.58" y2="20.32" width="0.1524" layer="91"/>
-<label x="182.88" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="INT" class="0">
@@ -11325,22 +11349,6 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <wire x1="223.52" y1="111.76" x2="231.14" y2="111.76" width="0.1524" layer="91"/>
 <junction x="223.52" y="111.76"/>
 <label x="226.06" y="111.76" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="185.42" y1="180.34" x2="193.04" y2="180.34" width="0.1524" layer="91"/>
-<label x="187.96" y="180.34" size="1.778" layer="95"/>
-<pinref part="X5" gate="-1" pin="S"/>
-</segment>
-<segment>
-<wire x1="205.74" y1="180.34" x2="215.9" y2="180.34" width="0.1524" layer="91"/>
-<label x="208.28" y="180.34" size="1.778" layer="95"/>
-<pinref part="X5" gate="-2" pin="S"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="VBAT"/>
-<pinref part="J2" gate="G$1" pin="1"/>
-<wire x1="236.22" y1="7.62" x2="256.54" y2="7.62" width="0.1524" layer="91"/>
-<label x="241.3" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

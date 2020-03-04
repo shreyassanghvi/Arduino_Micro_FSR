@@ -11037,12 +11037,6 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <junction x="345.44" y="160.02"/>
 <label x="350.52" y="160.02" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="PA0"/>
-<pinref part="J2" gate="G$1" pin="5"/>
-<wire x1="236.22" y1="17.78" x2="256.54" y2="17.78" width="0.1524" layer="91"/>
-<label x="241.3" y="17.78" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="N$4" class="0">
 <segment>
@@ -11154,6 +11148,13 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <pinref part="U$1" gate="G$1" pin="PC15"/>
 <pinref part="J2" gate="G$1" pin="4"/>
 <wire x1="236.22" y1="15.24" x2="256.54" y2="15.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PA0"/>
+<pinref part="J2" gate="G$1" pin="5"/>
+<wire x1="236.22" y1="17.78" x2="256.54" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$26" class="0">
