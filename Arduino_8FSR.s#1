@@ -10289,7 +10289,7 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <label x="81.28" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="AD0" class="0">
+<net name="NC" class="0">
 <segment>
 <wire x1="104.14" y1="45.72" x2="96.52" y2="45.72" width="0.1524" layer="91"/>
 <label x="96.52" y="45.72" size="1.778" layer="95"/>

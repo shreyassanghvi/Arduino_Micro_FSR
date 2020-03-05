@@ -10315,6 +10315,12 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <label x="119.38" y="45.72" size="1.778" layer="95"/>
 <pinref part="X6" gate="-16" pin="S"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="D0/RX"/>
+<wire x1="88.9" y1="132.08" x2="80.01" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="X3" gate="-14" pin="1"/>
+<label x="81.28" y="132.08" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$3" class="0">
 <segment>
@@ -10356,13 +10362,6 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <pinref part="U$2" gate="G$1" pin="D1/TX"/>
 <pinref part="X3" gate="-15" pin="1"/>
 <wire x1="88.9" y1="134.62" x2="80.01" y2="134.62" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="D0/RX"/>
-<wire x1="88.9" y1="132.08" x2="80.01" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="X3" gate="-14" pin="1"/>
 </segment>
 </net>
 </nets>
